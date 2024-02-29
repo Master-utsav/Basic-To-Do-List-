@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="./to-do-list.png" type="image/x-icon">
+</head>
+<body class="max-w-full max-h-full sm:overflow-x-hidden  m-0 p-0 box-border">
+    <div class="wrapper bg-[url('./gradient.png')] sm:h-[100vh] sm:w-[100vw] h-[100vh] w-[100vw] bg-no-repeat bg-cover pt-20 ">
+     <div class="content flex flex-col bg-slate-400 bg-opacity-20 backdrop-blur-md  sm:w-[30%] w-[90%] m-auto rounded-md relative ">
+        <span class=" flex flex-row mt-2 mb-2 p-5">
+            <h1 class=" font-bold text-4xl text-center ml-auto inline-block mr-1">To Do List</h1>
+            <img class="h-[50px] w-[50px] bg-cover mr-auto items-center justify-center flex" src="./to-do-list.png" alt="" srcset="">
+        </span>
+        <div class="inputs flex justify-center items-center ">
+        
+            <input id="inputTask" class=" sm:w-[80%] w-[80%]  outline-none h-[32px] rounded-tl-md rounded-bl-md bg-transparent border-l-2 border-t-2 border-b-2 border-blue-600 placeholder:text-slate-200 before:first-letter:ml-2 text-blue-200 pl-2" type="text" placeholder="Add your task" name="todo" >
+            <button id="inputTaskButton" class=" sm:w-[10%]  bg-blue-600 cursor-pointer text-white font-mullish text-opacity-70 hover:text-slate-800 hover:bg-blue-400 rounded-br-md rounded-tr-md p-1 border-none transition-all  " type="button">Add</button>
+
+        </div>
+        
+        <div id="itemContainer" class="flex mx-auto pt-5 pb-5 flex-col gap-2 w-[90%] max-h-auto min-h-[2%] bg-opacity-5 ">
+        </div>
+        
+     </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
